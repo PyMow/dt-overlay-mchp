@@ -53,7 +53,7 @@
 		interrupts = <180>, <179>, <178>;
 		interrupt-names = "hart-1", "hart-2", "hart-3";
 		#mbox-cells = <1>;
-		status = "okay";
+		status = "disabled";
 	};
 
 	rproc_contextb: remote-context {
@@ -62,7 +62,7 @@
 				<&contextb_reserved>, <&vdev0vring0>,
 				<&vdev0vring1>;
 		mboxes= <&ihc 8>;
-		status = "okay";
+		status = "disabled";
 	};
 };
 
